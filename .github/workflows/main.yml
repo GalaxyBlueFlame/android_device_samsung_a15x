@@ -55,7 +55,7 @@ jobs:
         mka recoveryimage -j$(nproc)
 
     - name: Upload recovery.img artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: recovery-img
         path: twrp/out/target/product/a15x/recovery.img
